@@ -17,8 +17,5 @@ Note that the "maths" for the exact angle calculation is done by tweaking until 
 
 The ShaderToy (https://www.shadertoy.com) approach of rendering a fullscreen quad is used (though in this case we use Metal rather than Open/WebGL).
 
-In this example we reuse the code from https://www.shadertoy.com/view/XsjXRm 
-- 2014: Plasma Globe by nimitz (twitter: @stormoid)
-
-
+In this example we port a Metalized version of the code from https://www.shadertoy.com/view/XsjXRm, that is: Plasma Globe by nimitz (twitter: @stormoid), 2014.
 
