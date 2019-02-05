@@ -19,3 +19,10 @@ The ShaderToy (https://www.shadertoy.com) approach of rendering a fullscreen qua
 
 In this example we port a Metalized version of the code from https://www.shadertoy.com/view/XsjXRm, that is: Plasma Globe by nimitz (twitter: @stormoid), 2014.
 
+## Maths
+
+Some differences to the unity SDK shader code are:
+- we pass the calibration as 4 terms (a,b,c,d), so that the angle code is fract(a.x * a.y + c + i.d), where i is the subpixel 0/1/2 (see AAPLShaders.metal).
+- we do the calculation in screen coords rather than in normalized coords.
+- h-flip and v-flip issues are handled by suitably massaging the above parameters rather than adding more complexity to the shader. (see GGMTLRenderer.m) In addition we ensure the numbers are in a suitably 'nice' +ve range.
+
