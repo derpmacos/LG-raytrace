@@ -1,5 +1,7 @@
 # LookingGlass raytracing
 
+![](lg.gif)
+
 Require macos 10.14 and a Looking Glass screen (https://lookingglassfactory.com)
 
 This contains a macos native code (LKGManager) for interfacing with the Looking Glass Display 
